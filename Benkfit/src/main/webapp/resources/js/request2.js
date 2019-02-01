@@ -23,7 +23,6 @@ Request.prototype = {
 				}					
 			}						
 		} else if( window.XMLHttpRequest ) {							
-									
 			try {						
 				this.httpRequest = new XMLHttpRequest();					
 			} catch( e ) {						

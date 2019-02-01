@@ -306,7 +306,7 @@
 		(function() {
 			
 			$('a').click(function(){
-				var location = $(this).attr("href");
+				var location = $(this).prop("href");
 				if(location != "#"){
 					window.location.href = location;
 				}

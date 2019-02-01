@@ -44,7 +44,7 @@
 							</thead>
 							<tbody>
 								<c:set var="num" value="1" />
-								<c:forEach var="ch" items="#{cheq}">
+								<c:forEach var="ch" items="${cheq}">
 									<tr>
 										<td>${num}</td>
 										<c:set var="num" value="${num+1}" />
@@ -76,7 +76,7 @@
 								</tr>
 							</thead>
 							<tbody>
-								<c:forEach var="lo" items="#{loan}">
+								<c:forEach var="lo" items="${loan}">
 									<tr>
 										<td>${lo.loan_num}</td>
 										<td>${lo.myLoan_account}</td>

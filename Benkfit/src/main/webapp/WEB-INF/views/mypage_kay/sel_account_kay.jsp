@@ -7,33 +7,33 @@
 <meta charset="UTF-8">
 <title>계좌조회</title>
 </head>
-<body>
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
 	<%@ include file="../Template/top.jsp"%>
 	<div class="wrapper">
 		<h2>예금계좌조회</h2>
 		<hr>
 		<form name="sel_account" method="post">
-			<table class="upinfo">
+			<table class="table_kay">
 				<tr>
 					<th>예금 계좌번호</th>
-					<td><input type="text"></td>
+					<td><input type="text" class="inputStyle"></td>
 				</tr>
 				<tr>
 					<th>조회기간</th>
-					<td><input type="date"> ~ <input type="date"></td>
+					<td><input type="date" class="date_kay"> ~ <input type="date" class="date_kay"></td>
 				</tr>
 				<tr>
-					<th>조회기간</th>
+					<th>조회조건</th>
 					<td>
-					<input type="radio">전체 
-					<input type="radio">입금 
-					<input type="radio">출금
+					<input type="radio" name="조회조건">전체 
+					<input type="radio" name="조회조건">입금 
+					<input type="radio" name="조회조건">출금
 					</td>
 				</tr>
 				<tr>
 					<th>조회결과 순거</th>
-					<td><input type="radio"/>최근거래순
-					 	<input type="radio"/>과거거래순
+					<td><input type="radio" name="조회결과">최근거래순
+					 	<input type="radio" name="조회결과">과거거래순
 					</td>
 				</tr>
 				<tr>
@@ -42,39 +42,40 @@
 					</th>
 				</tr>
 			</table>
+			<hr><br><br><br>
 			<h2>계좌정보</h2>
 			<hr>
-			<table class="upinfo">
+			<table class="table_kay">
 				<tr>
 					<th>계좌명</th>
-					<td></td>
+					<td><input type="text" class="inputStyle"></td>
 					<th>가입날짜</th>
-					<td><input type="text"></td>
+					<td><input type="text" class="inputStyle"></td>
 				</tr>
 				<tr>
 					<th>고객명</th>
-					<td></td>
+					<td><input type="text" class="inputStyle"></td>
 					<th>계좌번호</th>
-					<td></td>
+					<td><input type="text" class="inputStyle"></td>
 				</tr>
 				<tr>
 					<th>계좌잔액</th>
-					<td><input type="text"></td>
+					<td><input type="text" class="inputStyle"></td>
 					<th>출금가능금액</th>
-					<td></td>
+					<td><input type="text" class="inputStyle"></td>
 				</tr>
-			</table>
+			</table><hr><br><br><br>
 			<h2>거래내역</h2>
 			<table class="upinfo">
 				<tr>
 					<th>입금합계</th>
-					<td>0</td>
+					<td><input type="text" class="inputStyle"></td>
 					<th>출금합계</th>
-					<td>10000</td>
+					<td><input type="text" class="inputStyle"></td>
 				</tr>
 			</table>
-			<br><br>
-			<table class="upinfo">
+			<hr><br><br><br>
+			<table class="table_kay">
 				<tr>
 					<th>거래일자</th>
 					<th>거래시간</th>
